@@ -1,3 +1,9 @@
+import sys
+sys.path.append("../")
+sys.path.append("../../")
+sys.path.append("../mtrpp")
+
+
 import os, torch, numpy as np
 from pathlib import Path
 import torch.nn.functional as F
