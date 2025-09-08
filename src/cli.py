@@ -5,6 +5,8 @@ from pathlib import Path
 import argparse
 
 logging.basicConfig(level=logging.INFO)
+logging.info("START")
+
 
 def main(mp3_paths: list[Path], model_files: Path, genres: list[str]):
     if not model_files.exists():
