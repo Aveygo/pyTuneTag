@@ -18,4 +18,4 @@ dependencies = [
 ]
 
 [project.scripts]
-pytunetag = "src.cli:cli"
+pytunetag = "pytunetag.src.cli:cli"
