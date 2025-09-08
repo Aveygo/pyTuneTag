@@ -5,39 +5,10 @@ description = "A Python library to automatically detect and modify music genres 
 requires-python = ">=3.12"
 
 dependencies = [
-    "braceexpand",
-    "deepdiff",
-    "einops",
-    "evaluate",
-    "ftfy",
-    "h5py",
-    "horovod",
-    "jsonlines",
-    "librosa",
-    "mutagen",
-    "numpy",
-    "omegaconf",
-    "packaging",
-    "pandas",
-    "Pillow",
-    "pydub",
-    "regex",
-    "regex",
-    "scikit_learn",
-    "scipy",
-    "sentence_transformers",
-    "soundfile",
-    "timm",
     "torch",
-    "torchaudio",
-    "torchlibrosa",
-    "torchmetrics",
-    "torchvision",
-    "tqdm",
-    "transformers",
-    "webdataset",
-    "wget",
-    "tensorflow"
+    "numpy",
+    "pydub",
+    "mutagen"
 ]
 
 [project.scripts]
