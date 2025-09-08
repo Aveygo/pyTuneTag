@@ -2,8 +2,8 @@ import os, torch, numpy as np
 from pathlib import Path
 import torch.nn.functional as F
 
-from .mtrpp.utils.eval_utils import load_ttmr_pp
-from .mtrpp.utils.audio_utils import load_audio, STR_CH_FIRST
+from pytunetag.pytunetag.mtrpp.utils.eval_utils import load_ttmr_pp
+from pytunetag.pytunetag.mtrpp.utils.audio_utils import load_audio, STR_CH_FIRST
 from pydub import AudioSegment
 
 from mutagen.id3 import ID3, TCON
