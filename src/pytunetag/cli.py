@@ -1,6 +1,6 @@
 import logging
 
-from pytunetag import pyTuneTag
+from pytunetag.pytunetag import pyTuneTag
 from pathlib import Path
 import argparse
 
