@@ -8,7 +8,13 @@ dependencies = [
     "torch",
     "numpy",
     "pydub",
-    "mutagen"
+    "mutagen",
+    "pandas",
+    "scikit-learn",
+    "omegaconf",
+    "librosa",
+    "torchaudio",
+    "transformers",
 ]
 
 [project.scripts]
