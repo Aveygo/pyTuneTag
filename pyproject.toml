@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [tool.setuptools]
-package-dir = {"" = "src"}
+packages = ["src"]
 
 [project.scripts]
 pytunetag = "pytunetag.src.cli:cli"
