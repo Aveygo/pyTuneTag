@@ -17,12 +17,14 @@ from mutagen.id3 import ID3, TCON
 
 class pyTuneTag:
     def __init__(self, genres:list[str], model_src:Path):
+        
+        assert model_src.is_dir(), "model_src must be a directory"
 
         finished_pth = Path(os.path.join(model_src, "finished.flag"))
         
         if not finished_pth.exists():
-            torch.hub.download_url_to_file('https://huggingface.co/seungheondoh/ttmr-pp/resolve/main/ttmrpp_resnet_roberta.pth', model_src + 'best.pth')
-            torch.hub.download_url_to_file('https://huggingface.co/seungheondoh/ttmr-pp/resolve/main/ttmrpp_resnet_roberta.yaml', model_src + 'hparams.yaml')
+            torch.hub.download_url_to_file('https://huggingface.co/seungheondoh/ttmr-pp/resolve/main/ttmrpp_resnet_roberta.pth', os.path.join(model_src, 'best.pth'))
+            torch.hub.download_url_to_file('https://huggingface.co/seungheondoh/ttmr-pp/resolve/main/ttmrpp_resnet_roberta.yaml', os.path.join(model_src, 'hparams.yaml'))
             
             finished_pth.touch()
             
