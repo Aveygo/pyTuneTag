@@ -22,7 +22,7 @@ setuptools.setup(
     package_dir = {"": "src"},
     packages = setuptools.find_packages(where="src"),
     include_package_data=True,
-    package_data={'': ['src/pytunetag/mtrpp/modules/assets/mel_filters.npz']},
+    package_data={'': ['*.npz']},
     python_requires = ">=3.12",
     install_requires=[
         "torch",
