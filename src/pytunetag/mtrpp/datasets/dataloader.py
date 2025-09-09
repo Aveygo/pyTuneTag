@@ -3,12 +3,12 @@ import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
 import numpy as np
-from mtrpp.datasets.msd import MSD
-from mtrpp.datasets.audioset import Audioset
-from mtrpp.datasets.music4all import Music4all
-from mtrpp.datasets.fma import FMA
-from mtrpp.datasets.music_caps import MusicCaps
-from mtrpp.datasets.sampler import Sampler
+from pytunetag.mtrpp.datasets.msd import MSD
+from pytunetag.mtrpp.datasets.audioset import Audioset
+from pytunetag.mtrpp.datasets.music4all import Music4all
+from pytunetag.mtrpp.datasets.fma import FMA
+from pytunetag.mtrpp.datasets.music_caps import MusicCaps
+from pytunetag.mtrpp.datasets.sampler import Sampler
 
 def load_train_dataset(args):    
     if args.train_data == "all":

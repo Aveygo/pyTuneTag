@@ -7,7 +7,7 @@ import pandas as pd
 import torch
 from typing import Callable, List, Dict, Any
 from torch.utils.data import Dataset
-from mtrpp.utils.audio_utils import int16_to_float32, float32_to_int16, load_audio, STR_CH_FIRST
+from pytunetag.mtrpp.utils.audio_utils import int16_to_float32, float32_to_int16, load_audio, STR_CH_FIRST
 
 class MTAT_Dataset(Dataset):
     def __init__(self, data_path, split, sr, duration, num_chunks, split_type="codified"):

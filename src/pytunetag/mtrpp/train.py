@@ -11,10 +11,10 @@ import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
 import numpy as np
-from mtrpp.datasets.dataloader import load_train_dataset
-from mtrpp.model.dual_encoder import DualEncoderModel
-from mtrpp.utils.train_utils import Logger, AverageMeter, ProgressMeter, EarlyStopping, save_hparams
-from mtrpp.utils.eval_utils import print_model_params
+from pytunetag.mtrpp.datasets.dataloader import load_train_dataset
+from pytunetag.mtrpp.model.dual_encoder import DualEncoderModel
+from pytunetag.mtrpp.utils.train_utils import Logger, AverageMeter, ProgressMeter, EarlyStopping, save_hparams
+from pytunetag.mtrpp.utils.eval_utils import print_model_params
 parser = argparse.ArgumentParser(description='PyTorch MSD Training')
 parser.add_argument('--framework', type=str, default="pretrain")
 parser.add_argument('--data_dir', type=str, default="../../dataset")

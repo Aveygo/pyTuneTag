@@ -10,8 +10,8 @@ from tqdm import tqdm
 from omegaconf import DictConfig, OmegaConf
 import torch.backends.cudnn as cudnn
 # backbones
-from mtrpp.transfer.dataset_embs.data_manger import get_dataloader
-from mtrpp.utils.transfer_utils import single_query_evaluation, get_evaluation
+from pytunetag.mtrpp.transfer.dataset_embs.data_manger import get_dataloader
+from pytunetag.mtrpp.utils.transfer_utils import single_query_evaluation, get_evaluation
 from sklearn import metrics
 
 parser = argparse.ArgumentParser(description='PyTorch MSD Training')

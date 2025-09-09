@@ -6,10 +6,10 @@ import torch.nn.functional as F
 from torch import Tensor, nn
 from typing import Dict, Iterable, Optional
 from dataclasses import dataclass
-from mtrpp.modules.mel import MelEncoder
-from mtrpp.modules.frontend import SpecPatchEmbed, CNN2D, CNN1D
-from mtrpp.modules.pos_embed import get_2d_sincos_pos_embed_flexible
-from mtrpp.modules.attention import Block, LayerNorm
+from pytunetag.mtrpp.modules.mel import MelEncoder
+from pytunetag.mtrpp.modules.frontend import SpecPatchEmbed, CNN2D, CNN1D
+from pytunetag.mtrpp.modules.pos_embed import get_2d_sincos_pos_embed_flexible
+from pytunetag.mtrpp.modules.attention import Block, LayerNorm
 
 class AST(nn.Module):
     def __init__(

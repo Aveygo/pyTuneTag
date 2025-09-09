@@ -8,7 +8,7 @@ import jsonlines
 import numpy as np
 from datasets import load_dataset
 from torch.utils.data import Dataset
-from mtrpp.utils.audio_utils import float32_to_int16, int16_to_float32, load_audio, STR_CH_FIRST
+from pytunetag.mtrpp.utils.audio_utils import float32_to_int16, int16_to_float32, load_audio, STR_CH_FIRST
 
 class OLGA_Inference(Dataset):
     def __init__(self, data_dir, split, caption_type, audio_loader="ffmpeg", sr=22050, duration=10, audio_enc=".npy"):

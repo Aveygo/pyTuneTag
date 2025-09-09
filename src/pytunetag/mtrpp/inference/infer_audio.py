@@ -7,8 +7,8 @@ import numpy as np
 from tqdm import tqdm
 from glob import glob
 from torch.utils.data import Dataset
-from mtrpp.utils.audio_utils import int16_to_float32, float32_to_int16, load_audio, STR_CH_FIRST
-from mtrpp.utils.eval_utils import load_ttmr_pp
+from pytunetag.mtrpp.utils.audio_utils import int16_to_float32, float32_to_int16, load_audio, STR_CH_FIRST
+from pytunetag.mtrpp.utils.eval_utils import load_ttmr_pp
 from datasets import load_dataset
 
 class AUDIO_DATASET(Dataset):

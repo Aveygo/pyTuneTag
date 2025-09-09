@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from mtrpp.datasets.olga import OLGA_Inference
-from mtrpp.utils.eval_utils import load_ttmr_pp, print_model_params
+from pytunetag.mtrpp.datasets.olga import OLGA_Inference
+from pytunetag.mtrpp.utils.eval_utils import load_ttmr_pp, print_model_params
 from sklearn import metrics
 
 parser = argparse.ArgumentParser(description="")

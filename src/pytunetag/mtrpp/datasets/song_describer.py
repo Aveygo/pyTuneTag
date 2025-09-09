@@ -9,7 +9,7 @@ from re import sub
 from typing import Callable, List, Dict, Any
 from datasets import load_dataset
 from torch.utils.data import Dataset
-from mtrpp.preprocessing.audio_utils import float32_to_int16, int16_to_float32, load_audio, STR_CH_FIRST
+from pytunetag.mtrpp.preprocessing.audio_utils import float32_to_int16, int16_to_float32, load_audio, STR_CH_FIRST
 
 class SongDescriber(Dataset):
     def __init__(self, data_dir, split, caption_type, audio_loader="ffmpeg", sr=22050, duration=10, audio_enc=".mp3"):

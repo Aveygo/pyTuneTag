@@ -7,8 +7,8 @@ import transformers
 import numpy as np
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from mtrpp.datasets.dimsim import Dimsim
-from mtrpp.utils.eval_utils import load_ttmr_pp, print_model_params
+from pytunetag.mtrpp.datasets.dimsim import Dimsim
+from pytunetag.mtrpp.utils.eval_utils import load_ttmr_pp, print_model_params
 from sklearn import metrics
 
 parser = argparse.ArgumentParser(description="")

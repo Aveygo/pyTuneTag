@@ -1,10 +1,10 @@
 from torch.utils.data import DataLoader
-from mtrpp.transfer.dataset_wavs.mtat import MTAT_Dataset
-from mtrpp.transfer.dataset_wavs.gtzan import GTZAN_Dataset
-from mtrpp.transfer.dataset_wavs.fma import FMA_Dataset
-from mtrpp.transfer.dataset_wavs.kvt import KVT_Dataset
-from mtrpp.transfer.dataset_wavs.mtg import MTG_Dataset
-from mtrpp.transfer.dataset_wavs.emotify import EMOTIFY_Dataset
+from pytunetag.mtrpp.transfer.dataset_wavs.mtat import MTAT_Dataset
+from pytunetag.mtrpp.transfer.dataset_wavs.gtzan import GTZAN_Dataset
+from pytunetag.mtrpp.transfer.dataset_wavs.fma import FMA_Dataset
+from pytunetag.mtrpp.transfer.dataset_wavs.kvt import KVT_Dataset
+from pytunetag.mtrpp.transfer.dataset_wavs.mtg import MTG_Dataset
+from pytunetag.mtrpp.transfer.dataset_wavs.emotify import EMOTIFY_Dataset
 
 def get_dataloader(args, split):
     dataset = get_dataset(

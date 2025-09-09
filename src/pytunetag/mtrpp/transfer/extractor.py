@@ -11,9 +11,9 @@ from tqdm import tqdm
 from omegaconf import DictConfig, OmegaConf
 import torch.backends.cudnn as cudnn
 # backbones
-from mtrpp.transfer.dataset_wavs.data_manger import get_dataloader
-from mtrpp.utils.train_utils import Logger, AverageMeter, ProgressMeter, EarlyStopping, save_hparams
-from mtrpp.utils.eval_utils import load_ttmr_pp
+from pytunetag.mtrpp.transfer.dataset_wavs.data_manger import get_dataloader
+from pytunetag.mtrpp.utils.train_utils import Logger, AverageMeter, ProgressMeter, EarlyStopping, save_hparams
+from pytunetag.mtrpp.utils.eval_utils import load_ttmr_pp
 from sklearn import metrics
 import torch.backends.cudnn as cudnn
 from tqdm import tqdm

@@ -11,11 +11,11 @@ from omegaconf import DictConfig, OmegaConf
 import torch
 import torch.backends.cudnn as cudnn
 # backbones
-from mtrpp.transfer.model_probing import ProbingLayer
-from mtrpp.transfer.dataset_embs.data_manger import get_dataloader
-from mtrpp.utils.train_utils import Logger, AverageMeter, ProgressMeter, EarlyStopping, save_hparams
-from mtrpp.utils.eval_utils import load_ttmr_pp
-from mtrpp.utils.transfer_utils import get_cls_config, print_model_params, single_query_evaluation
+from pytunetag.mtrpp.transfer.model_probing import ProbingLayer
+from pytunetag.mtrpp.transfer.dataset_embs.data_manger import get_dataloader
+from pytunetag.mtrpp.utils.train_utils import Logger, AverageMeter, ProgressMeter, EarlyStopping, save_hparams
+from pytunetag.mtrpp.utils.eval_utils import load_ttmr_pp
+from pytunetag.mtrpp.utils.transfer_utils import get_cls_config, print_model_params, single_query_evaluation
 from sklearn import metrics
 
 parser = argparse.ArgumentParser(description='PyTorch MSD Training')

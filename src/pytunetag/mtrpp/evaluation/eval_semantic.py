@@ -4,11 +4,11 @@ import torch
 import argparse
 import transformers
 from tqdm import tqdm
-from mtrpp.datasets.music_caps import MusicCaps
-from mtrpp.datasets.song_describer import SongDescriber
-from mtrpp.utils.query_utils import query_processor
-from mtrpp.utils.metrics import recall, mean_average_precision, mean_reciprocal_rank, median_rank
-from mtrpp.utils.eval_utils import get_query2target_idx, get_task_predictions, load_ttmr_pp, print_model_params
+from pytunetag.mtrpp.datasets.music_caps import MusicCaps
+from pytunetag.mtrpp.datasets.song_describer import SongDescriber
+from pytunetag.mtrpp.utils.query_utils import query_processor
+from pytunetag.mtrpp.utils.metrics import recall, mean_average_precision, mean_reciprocal_rank, median_rank
+from pytunetag.mtrpp.utils.eval_utils import get_query2target_idx, get_task_predictions, load_ttmr_pp, print_model_params
 from sklearn import metrics
 
 parser = argparse.ArgumentParser(description="")

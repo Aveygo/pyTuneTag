@@ -3,8 +3,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from mtrpp.modules.resnet import ModifiedResNet
-from mtrpp.model.loss import InfoNCE
+from pytunetag.mtrpp.modules.resnet import ModifiedResNet
+from pytunetag.mtrpp.model.loss import InfoNCE
 from transformers import AutoModel, AutoTokenizer, set_seed
 
 class DualEncoderModel(nn.Module):

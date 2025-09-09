@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset
 from datasets import load_dataset
-from mtrpp.utils.audio_utils import int16_to_float32
+from pytunetag.mtrpp.utils.audio_utils import int16_to_float32
 import jsonlines
 
 class MSD(Dataset):

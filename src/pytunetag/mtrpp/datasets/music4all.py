@@ -6,7 +6,7 @@ import torch
 from torch.utils.data import Dataset
 from datasets import load_dataset, concatenate_datasets
 import jsonlines
-from mtrpp.utils.audio_utils import int16_to_float32
+from pytunetag.mtrpp.utils.audio_utils import int16_to_float32
 
 class Music4all(Dataset):
     def __init__(self, data_dir, split, caption_type, sr=22050, duration=10, audio_enc="npy"):

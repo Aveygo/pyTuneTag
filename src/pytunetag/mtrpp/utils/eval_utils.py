@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from sklearn import metrics
 from omegaconf import DictConfig, OmegaConf
-from mtrpp.model.dual_encoder import DualEncoderModel
+from pytunetag.mtrpp.model.dual_encoder import DualEncoderModel
         
 def get_query2target_idx(query2target, target2idx):
     query2target_idx = {}
@@ -34,12 +34,12 @@ def load_pretrain_model(args):
     if args.model_type == "random":
         model, sr, duration  = torch.nn.Identity(), 48000, 10
     elif args.model_type == "clap-music":
-        from mtrpp.baselines import LAION_CLAP
+        from pytunetag.mtrpp.baselines import LAION_CLAP
         clap_dir = '/workspace/seungheon/dataset/model/clap'
         model = LAION_CLAP(pretrain_dir=clap_dir, ckpt="music_audioset_epoch_15_esc_90.14.pt", device="cpu")
         sr, duration = 48000, 10
     elif args.model_type == "clap-fusion":
-        from mtrpp.baselines import LAION_CLAP
+        from pytunetag.mtrpp.baselines import LAION_CLAP
         clap_dir = '/workspace/seungheon/dataset/model/clap'
         model = LAION_CLAP(pretrain_dir=clap_dir, ckpt="630k-audioset-fusion-best.pt", device="cpu")
         sr, duration = 48000, 10
