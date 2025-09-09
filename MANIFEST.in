@@ -1,1 +1,2 @@
 include mel_filters.npz
+include *.npz
