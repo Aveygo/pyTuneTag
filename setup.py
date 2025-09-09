@@ -36,7 +36,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'pytunetag = pytunetag.pytunetag.cli:cli',
+            'pytunetag = pytunetag.cli:cli',
         ],
     },
 )
